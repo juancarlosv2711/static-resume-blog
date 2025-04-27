@@ -1,16 +1,35 @@
 <template>
-  <header>
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/resume">Resume</router-link>
-      <router-link to="/blog">Blog</router-link>
-    </nav>
-  </header>
-  <main>
-    <router-view></router-view>  <!-- 👈 Renders the current route -->
-  </main>
+  <div class="app-container">
+    <Sidebar />
+    <div class="content">
+      <header>
+        <!-- Removed the old nav -->
+      </header>
+      <main>
+        <router-view></router-view> <!-- 👈 Renders the current route -->
+      </main>
+    </div>
+  </div>
 </template>
 
+<script>
+import Sidebar from "./components/navigation/Sidebar.vue";
+
+export default {
+  components: {
+    Sidebar,
+  },
+};
+</script>
+
 <style>
-/* Add your global styles here */
+.app-container {
+  display: flex;
+}
+
+.content {
+  margin-left: 250px; /* Matches the sidebar width */
+  padding: 1rem;
+  flex: 1;
+}
 </style>
