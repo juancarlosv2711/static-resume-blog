@@ -82,32 +82,53 @@
               <li>
                 Designing architecture ensures seamless interaction between
                 different microservices, with careful anticipation of potential
-                issues to prevent problems down the line.
-              </li>
-              <li>
+                issues to prevent problems down the line. This process involves
+                outlining the necessary tasks to implement functionality and
+                providing accurate estimates of the required effort.
                 Architectural proposals from peers are reviewed and validated to
                 maintain consistency and quality across the board.
               </li>
-              <li>Provide mentorship to junior developers.</li>
+              <li>
+                Provide mentorship to junior developers, guiding them in best
+                practices, code quality, and problem-solving strategies to
+                accelerate their growth and contribution to the team.
+              </li>
               <li>
                 On the frontend, interactive and responsive user interfaces are
-                developed using Vue.js.
+                developed using Vue.js, a progressive JavaScript framework. By
+                leveraging Vue’s component- based architecture, reusable and
+                modular UI elements are created, enhancing development
+                efficiency and improving code maintainability.
               </li>
               <li>
-                For backend development, both Go (Golang) and PHP are used.
+                For backend development, both Go (Golang) and PHP are used to
+                build scalable, high-performance systems, utilizing their
+                respective strengths in simplicity and performance. Both gRPC
+                and RESTful APIs are employed to facilitate efficient
+                communication between microservices.
               </li>
-              <li>MySQL and PostgreSQL databases are utilized.</li>
               <li>
-                In terms of infrastructure, Docker's containerization
-                capabilities are utilized.
+                MySQL and PostgreSQL databases are utilized to store and
+                retrieve information used across various applications.
+                Additionally, Solr is used to optimize information retrieval,
+                ensuring fast and accurate search results.
               </li>
               <li>
-                Within the Scrum framework, key agile ceremonies are actively
-                contributed to.
+                In terms of infrastructure, Docker’s containerization
+                capabilities are utilized to run various services, enabling
+                seamless development, testing, and deployment across different
+                environments.
+              </li>
+              <li>
+                Within the Scrum framework, key agile ceremonies, including
+                Sprint Planning, Sprint Reviews, Sprint Retrospectives, and
+                Backlog Grooming, are actively contributed to and led, ensuring
+                the team stays aligned and productive.
               </li>
               <li>
                 Finally, code reviews and local testing are performed using
-                GitHub.
+                GitHub, with collaboration among peers to maintain high-quality
+                code and successful project outcomes.
               </li>
             </ul>
           </div>
@@ -122,19 +143,31 @@
             </div>
             <ul class="job-description">
               <li>
-                Proficiently identified and resolved bugs within the platform.
+                Proficiently identified and resolved bugs within the platform,
+                employing programming skills to develop tailored solutions,
+                enhancing overall platform functionality and user experience.
               </li>
               <li>
-                Provided exceptional product support by utilizing MySQL
-                database.
+                Provided exceptional product support by utilizing MySQL database
+                to extract and update crucial information to address
+                data-related issues efficiently. Managed prioritized cases in
+                Jira, demonstrating strong organizational and multitasking
+                skills to address customer issues.
               </li>
-              <li>Managed prioritized cases in Jira.</li>
               <li>
-                Identified and resolved software bugs through coding solutions.
+                Identified and resolved software bugs through coding solutions,
+                showcasing a strong technical aptitude and problem-solving
+                ability.
               </li>
-              <li>Established and maintained comprehensive documentation.</li>
               <li>
-                Actively participated in continuous improvement initiatives.
+                Established and maintained comprehensive documentation for issue
+                resolution processes, facilitating knowledge transfer within the
+                team and organization.
+              </li>
+              <li>
+                Actively participated in continuous improvement initiatives,
+                contributing insights to enhance product stability and user
+                experience.
               </li>
             </ul>
           </div>
@@ -184,7 +217,7 @@ export default {
   text-align: center;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid black;
 }
 
 h1 {
@@ -321,11 +354,11 @@ h3 {
   position: relative;
   padding-left: 20px;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .job-description li:before {
   content: "•";
-  color: #3498db;
   font-size: 1.2rem;
   position: absolute;
   left: 0;
