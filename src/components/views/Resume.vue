@@ -1,101 +1,372 @@
 <template>
   <div class="resume">
-    <h1>Juan Carlos Velásquez López</h1>
-    <h2>Software Developer</h2>
-    <section class="profile">
-      <h3>P R O F I L E</h3>
-      <p>
-        Experienced Software Developer skilled in designing, installing, testing, and
-        maintaining software systems. Collaborating with large teams in design meetings,
-        sprint planning, backlog grooming, and code reviews, I bring unique perspectives on
-        software design patterns and principles.
-      </p>
-    </section>
-    <section class="work-experience">
-      <h3>W O R K   E X P E R I E N C E</h3>
-      <div class="job">
-        <h4>Software Engineer</h4>
-        <p class="resumeDate">December 2022 - current</p>
-        <p class="resumeDate">Huli</p>
-        <ul>
-          <li>Designing architecture ensures seamless interaction between different microservices...</li>
-          <li>Architectural proposals from peers are reviewed and validated...</li>
-          <li>Provide mentorship to junior developers...</li>
-          <li>On the frontend, interactive and responsive user interfaces are developed using Vue.js...</li>
-          <li>For backend development, both Go (Golang) and PHP are used...</li>
-          <li>MySQL and PostgreSQL databases are utilized...</li>
-          <li>In terms of infrastructure, Docker’s containerization capabilities are utilized...</li>
-          <li>Within the Scrum framework, key agile ceremonies are actively contributed to...</li>
-          <li>Finally, code reviews and local testing are performed using GitHub...</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h4>Product Support</h4>
-        <p class="resumeDate">February 2020 - 2022</p>
-        <p class="resumeDate">Huli</p>
-        <ul>
-          <li>Proficiently identified and resolved bugs within the platform...</li>
-          <li>Provided exceptional product support by utilizing MySQL database...</li>
-          <li>Managed prioritized cases in Jira...</li>
-          <li>Identified and resolved software bugs through coding solutions...</li>
-          <li>Established and maintained comprehensive documentation...</li>
-          <li>Actively participated in continuous improvement initiatives...</li>
-        </ul>
-      </div>
-    </section>
+    <header class="header">
+      <h1>Juan Carlos Velásquez López</h1>
+      <h2>Software Developer</h2>
+    </header>
+
+    <div class="resume-grid">
+      <aside class="sidebar">
+        <section class="profile">
+          <h3>PROFILE</h3>
+          <p>
+            Experienced Software Developer skilled in designing, installing,
+            testing, and maintaining software systems. Collaborating with large
+            teams in design meetings, sprint planning, backlog grooming, and
+            code reviews, I bring unique perspectives on software design
+            patterns and principles.
+          </p>
+        </section>
+
+        <section class="contact">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><i class="fas fa-phone"></i> +506 8842-9615</li>
+            <li><i class="fas fa-envelope"></i> juancarlosv2711@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Heredia, Costa Rica</li>
+          </ul>
+        </section>
+
+        <section class="skills">
+          <h3>SKILLS</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Golang</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Solr</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </section>
+
+        <section class="languages">
+          <h3>LANGUAGES</h3>
+          <div class="language-item">
+            <span>English</span>
+            <div class="language-level">
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+              <div class="level-dot"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span>Spanish</span>
+            <div class="language-level">
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+              <div class="level-dot filled"></div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <section class="work-experience">
+          <h3>WORK EXPERIENCE</h3>
+          <div class="job">
+            <div class="job-header">
+              <h4>Software Engineer</h4>
+              <div class="job-meta">
+                <span class="company">Huli</span>
+                <span class="date">December 2022 - current</span>
+              </div>
+            </div>
+            <ul class="jobDescription">
+              <li>
+                Designing architecture ensures seamless interaction between
+                different microservices, with careful anticipation of potential
+                issues to prevent problems down the line. This process involves
+                outlining the necessary tasks to implement functionality and
+                providing accurate estimates of the required effort.
+                Architectural proposals from peers are reviewed and validated to
+                maintain consistency and quality across the board.
+              </li>
+              <li>
+                Architectural proposals from peers are reviewed and validated...
+              </li>
+              <li>Provide mentorship to junior developers...</li>
+              <li>
+                On the frontend, interactive and responsive user interfaces are
+                developed using Vue.js...
+              </li>
+              <li>
+                For backend development, both Go (Golang) and PHP are used...
+              </li>
+              <li>MySQL and PostgreSQL databases are utilized...</li>
+              <li>
+                In terms of infrastructure, Docker's containerization
+                capabilities are utilized...
+              </li>
+              <li>
+                Within the Scrum framework, key agile ceremonies are actively
+                contributed to...
+              </li>
+              <li>
+                Finally, code reviews and local testing are performed using
+                GitHub...
+              </li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <h4>Product Support</h4>
+              <div class="job-meta">
+                <span class="company">Huli</span>
+                <span class="date">February 2020 - 2022</span>
+              </div>
+            </div>
+            <ul class="jobDescription">
+              <li>
+                Proficiently identified and resolved bugs within the platform...
+              </li>
+              <li>
+                Provided exceptional product support by utilizing MySQL
+                database...
+              </li>
+              <li>Managed prioritized cases in Jira...</li>
+              <li>
+                Identified and resolved software bugs through coding
+                solutions...
+              </li>
+              <li>Established and maintained comprehensive documentation...</li>
+              <li>
+                Actively participated in continuous improvement initiatives...
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="education">
+          <h3>EDUCATION</h3>
+          <div class="degree">
+            <h4>Software Engineer</h4>
+            <div class="degree-meta">
+              <span class="institution">Universidad Latina</span>
+              <span class="date">2019 - 2022</span>
+            </div>
+          </div>
+          <div class="degree">
+            <h4>Science in Information Technology</h4>
+            <div class="degree-meta">
+              <span class="institution">CCT College Dublin</span>
+              <span class="date">2017 - 2019</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ResumeView'
-}
+  name: "ResumeView",
+};
 </script>
 
 <style scoped>
+/* Base Styles */
 .resume {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  padding: 20px;
-  max-width: 800px;
+  color: #333;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
 }
 
-h1, h2 {
+.header {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #7f8c8d;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 h3 {
-  margin-top: 20px;
-  border-bottom: 2px solid #333;
-  padding-bottom: 5px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 25px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ecf0f1;
 }
 
-.profile, .work-experience {
-  margin-top: 20px;
+/* Grid Layout */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
 }
 
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Profile Section */
+.profile p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Contact Section */
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact i {
+  margin-right: 10px;
+  color: #3498db;
+  width: 20px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Languages Section */
+.language-item {
+  margin-bottom: 15px;
+}
+
+.language-level {
+  display: flex;
+  margin-top: 5px;
+}
+
+.level-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #3498db;
+  margin-right: 5px;
+}
+
+.level-dot.filled {
+  background-color: #3498db;
+}
+
+/* Work Experience */
 .job {
-  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.job-header {
+  margin-bottom: 10px;
 }
 
 .job h4 {
-  margin: 5px 0;
-  text-align: left;
-}
-
-ul {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-
-ul li {
+  font-size: 1.1rem;
+  color: #2c3e50;
   margin-bottom: 5px;
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.job ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.job li:before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Education Section */
+.degree {
+  margin-bottom: 20px;
+}
+
+.degree h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.degree-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.jobDescription {
   text-align: left;
 }
 
-.resumeDate {
-  text-align: left;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+  .main-content {
+    order: 1;
+  }
 }
 </style>
