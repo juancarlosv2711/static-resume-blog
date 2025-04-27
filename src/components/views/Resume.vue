@@ -78,39 +78,36 @@
                 <span class="date">December 2022 - current</span>
               </div>
             </div>
-            <ul class="jobDescription">
+            <ul class="job-description">
               <li>
                 Designing architecture ensures seamless interaction between
                 different microservices, with careful anticipation of potential
-                issues to prevent problems down the line. This process involves
-                outlining the necessary tasks to implement functionality and
-                providing accurate estimates of the required effort.
+                issues to prevent problems down the line.
+              </li>
+              <li>
                 Architectural proposals from peers are reviewed and validated to
                 maintain consistency and quality across the board.
               </li>
-              <li>
-                Architectural proposals from peers are reviewed and validated...
-              </li>
-              <li>Provide mentorship to junior developers...</li>
+              <li>Provide mentorship to junior developers.</li>
               <li>
                 On the frontend, interactive and responsive user interfaces are
-                developed using Vue.js...
+                developed using Vue.js.
               </li>
               <li>
-                For backend development, both Go (Golang) and PHP are used...
+                For backend development, both Go (Golang) and PHP are used.
               </li>
-              <li>MySQL and PostgreSQL databases are utilized...</li>
+              <li>MySQL and PostgreSQL databases are utilized.</li>
               <li>
                 In terms of infrastructure, Docker's containerization
-                capabilities are utilized...
+                capabilities are utilized.
               </li>
               <li>
                 Within the Scrum framework, key agile ceremonies are actively
-                contributed to...
+                contributed to.
               </li>
               <li>
                 Finally, code reviews and local testing are performed using
-                GitHub...
+                GitHub.
               </li>
             </ul>
           </div>
@@ -123,22 +120,21 @@
                 <span class="date">February 2020 - 2022</span>
               </div>
             </div>
-            <ul class="jobDescription">
+            <ul class="job-description">
               <li>
-                Proficiently identified and resolved bugs within the platform...
+                Proficiently identified and resolved bugs within the platform.
               </li>
               <li>
                 Provided exceptional product support by utilizing MySQL
-                database...
+                database.
               </li>
-              <li>Managed prioritized cases in Jira...</li>
+              <li>Managed prioritized cases in Jira.</li>
               <li>
-                Identified and resolved software bugs through coding
-                solutions...
+                Identified and resolved software bugs through coding solutions.
               </li>
-              <li>Established and maintained comprehensive documentation...</li>
+              <li>Established and maintained comprehensive documentation.</li>
               <li>
-                Actively participated in continuous improvement initiatives...
+                Actively participated in continuous improvement initiatives.
               </li>
             </ul>
           </div>
@@ -266,6 +262,8 @@ h3 {
   border-radius: 15px;
   font-size: 0.85rem;
   text-align: center;
+  display: inline-block;
+  margin: 2px;
 }
 
 /* Languages Section */
@@ -311,6 +309,7 @@ h3 {
   color: #7f8c8d;
   font-size: 0.9rem;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .job ul {
@@ -318,13 +317,13 @@ h3 {
   padding-left: 0;
 }
 
-.job li {
+.job-description li {
   position: relative;
   padding-left: 20px;
   margin-bottom: 8px;
 }
 
-.job li:before {
+.job-description li:before {
   content: "•";
   color: #3498db;
   font-size: 1.2rem;
@@ -349,24 +348,96 @@ h3 {
   justify-content: space-between;
   color: #7f8c8d;
   font-size: 0.9rem;
-}
-
-.jobDescription {
-  text-align: left;
+  flex-wrap: wrap;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .resume {
+    padding: 15px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+  }
+
   .resume-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .sidebar {
     order: 2;
+    padding: 15px;
   }
 
   .main-content {
     order: 1;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .job-meta,
+  .degree-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .job-meta span,
+  .degree-meta span {
+    width: 100%;
+  }
+
+  .job-description li {
+    padding-left: 15px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .contact li {
+    font-size: 0.9rem;
+  }
+
+  .job h4,
+  .degree h4 {
+    font-size: 1rem;
+  }
+
+  .job-description li {
+    font-size: 0.9rem;
   }
 }
 </style>
