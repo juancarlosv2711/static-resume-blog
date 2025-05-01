@@ -31,8 +31,8 @@ export default {
     return {
       posts: [
         {
-          slug: "getting-started-with-aws",
-          title: "Getting Started with AWS",
+          slug: "static-website-hosting",
+          title: "Hosting Static Website in S3 AWS Bucket and CloudFront",
           date: "2023-10-15",
           excerpt: "How I deployed my first static site to S3 and CloudFront",
         },

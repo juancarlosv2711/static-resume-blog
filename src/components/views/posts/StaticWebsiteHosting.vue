@@ -151,7 +151,7 @@ aws s3 sync ./your-website-folder s3://your-bucket-name --acl public-read</pre
 
 <script>
 export default {
-  name: "MyFirstPost",
+  name: "StaticWebsiteHostingPost",
 };
 </script>
 
