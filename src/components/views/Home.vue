@@ -76,7 +76,6 @@
           <div class="stack-items">
             <span class="stack-item">Golang</span>
             <span class="stack-item">PHP</span>
-            <span class="stack-item">Node.js</span>
           </div>
         </div>
         <div class="stack-category">
