@@ -162,7 +162,7 @@ export default {
 <style scoped>
 .sidebar {
   width: 280px;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9f5f0 100%);
   padding: 2rem;
   height: 100vh;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -211,7 +211,7 @@ export default {
   color: #2c3e50;
   font-weight: 500;
   display: block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -270,6 +270,7 @@ h2 {
 .contact-item span {
   flex: 1;
   line-height: 1.4;
+  padding: 2px;
 }
 
 .skills-list {
