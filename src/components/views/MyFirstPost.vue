@@ -160,6 +160,16 @@ export default {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .post {
+    padding: 1rem;
+    max-width: 100%;
+  }
 }
 
 .post-date {
@@ -171,12 +181,43 @@ export default {
 .post-content {
   line-height: 1.6;
   color: #555;
+  font-size: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .post-content {
+    font-size: 0.95rem;
+  }
 }
 
 .post-content h2 {
   margin-top: 2rem;
   color: #2c3e50;
   text-align: left;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .post-content h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.post-content h3 {
+  margin-top: 1.5rem;
+  color: #2c3e50;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .post-content h3 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+  }
 }
 
 .post-content ul,
@@ -186,6 +227,13 @@ export default {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.5rem;
+  }
+}
+
 .post-content pre {
   background-color: #f5f5f5;
   padding: 1rem;
@@ -193,6 +241,18 @@ export default {
   overflow-x: auto;
   margin: 1rem 0;
   text-align: left;
+  font-size: 0.9rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .post-content pre {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
 }
 
 .post-content code {
@@ -200,5 +260,28 @@ export default {
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
   font-family: monospace;
+  font-size: 0.9rem;
+  word-break: break-word;
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .post-content code {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+  .post-content p {
+    margin-bottom: 0.8rem;
+  }
+
+  .post-content ul li,
+  .post-content ol li {
+    margin-bottom: 0.5rem;
+  }
 }
 </style>
