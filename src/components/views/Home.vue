@@ -98,14 +98,14 @@
       </p>
       <div class="social-links">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/juancarlosv2711"
           target="_blank"
           class="social-link"
         >
           <i class="fab fa-github"></i>
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/juan-velasquez-51762814a"
           target="_blank"
           class="social-link"
         >
