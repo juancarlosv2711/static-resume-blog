@@ -276,7 +276,7 @@ h3 {
 
 .contact i {
   margin-right: 10px;
-  color: #3498db;
+  color: #42b983;
   width: 20px;
   text-align: center;
 }
@@ -313,12 +313,12 @@ h3 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid #3498db;
+  border: 1px solid #42b983;
   margin-right: 5px;
 }
 
 .level-dot.filled {
-  background-color: #3498db;
+  background-color: #42b983;
 }
 
 /* Work Experience */

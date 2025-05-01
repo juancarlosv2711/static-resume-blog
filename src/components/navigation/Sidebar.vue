@@ -217,12 +217,12 @@ export default {
 }
 
 .sidebar a:hover {
-  color: #3498db;
+  color: #42b983;
   background-color: #f8f9fa;
 }
 
 .sidebar a.router-link-active {
-  color: #3498db;
+  color: #42b983;
   background-color: #f8f9fa;
   font-weight: 600;
 }
@@ -258,7 +258,7 @@ h2 {
 }
 
 .contact-item:hover {
-  color: #3498db;
+  color: #42b983;
 }
 
 .contact-item i {
@@ -288,7 +288,7 @@ h2 {
 }
 
 .skill-tag:hover {
-  background-color: #3498db;
+  background-color: #42b983;
   color: white;
 }
 
@@ -305,7 +305,7 @@ h2 {
 }
 
 .social-link:hover {
-  color: #3498db;
+  color: #42b983;
 }
 
 /* Hamburger menu styles */

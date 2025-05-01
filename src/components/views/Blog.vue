@@ -110,7 +110,7 @@ h1 {
 }
 
 .post-card h2 a:hover {
-  color: #3498db;
+  color: #42b983;
   text-decoration: underline;
 }
 
