@@ -31,14 +31,19 @@ export default {
 
 .content {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
   transition: margin-left 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Desktop styles - sidebar visible */
 @media (min-width: 769px) {
   .content {
     margin-left: 250px; /* Matches the sidebar width */
+    padding: 2rem;
   }
 }
 
@@ -47,6 +52,8 @@ export default {
   .content {
     margin-left: 0;
     padding-top: 60px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 </style>
