@@ -31,7 +31,7 @@ export default {
 
 .content {
   flex: 1;
-  padding: 1rem;
+  padding: 2rem;
   transition: margin-left 0.3s ease;
 }
 
@@ -46,6 +46,7 @@ export default {
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
+    padding-top: 60px;
   }
 }
 </style>
