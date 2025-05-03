@@ -152,6 +152,9 @@ aws s3 sync ./your-website-folder s3://your-bucket-name --acl public-read</pre
 <script>
 export default {
   name: "StaticWebsiteHostingPost",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 

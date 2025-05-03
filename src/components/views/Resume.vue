@@ -198,6 +198,9 @@
 <script>
 export default {
   name: "ResumeView",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
